@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 
 
-
+//formula para actualizar los dulces en el juego
 
 
 function dulcesTablero(){
@@ -41,6 +41,8 @@ function dulcesTablero(){
 
 };
 
+// botón de reinicio del juego
+
 $(".btn-reinicio").on ("click",function(){
   var twoMinutes = 60 * 2,
       display = document.querySelector('#times');
@@ -60,7 +62,7 @@ $(".btn-reinicio").click(dulcesTablero);
 
 
 
-
+//formula para el timer
 
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
