@@ -12,31 +12,31 @@ $(document).ready(function(){
 function dulcesTablero(){
   for (var i = 0; i < 7; i++) {
   var numero = Math.floor(Math.random()*4+1);
-  $(".col-1").append("<img id='dulce' src=image/"+ numero +".png>");
+  $(".col-1").append("<img id='dulce-1' src=image/"+ numero +".png>");
   };
   for (var i = 0; i < 7; i++) {
   var numero = Math.floor(Math.random()*4+1);
-  $(".col-2").append("<img id='dulce' src=image/"+ numero +".png>");
+  $(".col-2").append("<img id='dulce-2' src=image/"+ numero +".png>");
   };
   for (var i = 0; i < 7; i++) {
   var numero = Math.floor(Math.random()*4+1);
-  $(".col-3").append("<img id='dulce' src=image/"+ numero +".png>");
+  $(".col-3").append("<img id='dulce-3' src=image/"+ numero +".png>");
   };
   for (var i = 0; i < 7; i++) {
   var numero = Math.floor(Math.random()*4+1);
-  $(".col-4").append("<img id='dulce' src=image/"+ numero +".png>");
+  $(".col-4").append("<img id='dulce-4' src=image/"+ numero +".png>");
   };
   for (var i = 0; i < 7; i++) {
   var numero = Math.floor(Math.random()*4+1);
-  $(".col-5").append("<img id='dulce' src=image/"+ numero +".png>");
+  $(".col-5").append("<img id='dulce-5' src=image/"+ numero +".png>");
   };
   for (var i = 0; i < 7; i++) {
   var numero = Math.floor(Math.random()*4+1);
-  $(".col-6").append("<img id='dulce' src=image/"+ numero +".png>");
+  $(".col-6").append("<img id='dulce-6' src=image/"+ numero +".png>");
   };
   for (var i = 0; i < 7; i++) {
   var numero = Math.floor(Math.random()*4+1);
-  $(".col-7").append("<img id='dulce' src=image/"+ numero +".png>");
+  $(".col-7").append("<img id='dulce-7' src=image/"+ numero +".png>");
   };
 
 };
@@ -48,7 +48,13 @@ $(".btn-reinicio").on ("click",function(){
 });
 
 $(".btn-reinicio").on("click", function(){
-  $("img#dulce").remove();
+  $("img#dulce-1").remove();
+  $("img#dulce-2").remove();
+  $("img#dulce-3").remove();
+  $("img#dulce-4").remove();
+  $("img#dulce-5").remove();
+  $("img#dulce-6").remove();
+  $("img#dulce-7").remove();
 });
 $(".btn-reinicio").click(dulcesTablero);
 
