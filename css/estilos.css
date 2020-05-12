@@ -108,4 +108,5 @@ div[class^='col']{
 img{
   width: 90%;
   z-index: 1000;
+  opacity: 1;
 }
